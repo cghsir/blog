@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>git 常用指令</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="/index.html">主页</a></h1>
+      <h2>git 常用指令</h2>
+<table class="table table-bordered  table-striped">
+         <caption>git 常用指令</caption>
+          <thead>
+            <tr>
+              <th>指令</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>git config --global user.name "Your Name"</td>
+              <td>设置github 账户名</td>
+            </tr>
+            <tr>
+              <td>git config --gloabl user.email "email.@example.com"</td>
+              <td>设置github 邮箱</td>
+            </tr>
+            <tr>
+              <td>git init</td>
+              <td>把当前目录变成git 可以管理的本地仓库 //会在当前目录生成一个.git的隐藏文件夹</td>
+            </tr>
+            <tr>
+              <td>git add "文件名" "文件名"</td>
+              <td>将文件加入到index（缓存）中</td>
+            </tr>
+            <tr>
+              <td>git commit -m "提交的注释"</td>
+              <td>将缓存中的变更提交到当前分支</td>
+            </tr>
+            <tr>
+              <td>git status</td>
+              <td>查看当前状态</td>
+            </tr>
+            <tr>
+              <td>git diff "文件名"</td>
+              <td>查看文件更改</td>
+            </tr>
+            <tr>
+              <td>git log</td>
+              <td>git log命令显示从最近到最远的提交日志</td>
+            </tr>
+            <tr>
+              <td>git reset --hard HEAD^</td>
+              <td>HEAD标识当前版本 HEAD^ 上个版本  HEAD^^上上个版本 往上100个版本 HEAD~100</td>
+            </tr>
+            <tr>
+              <td>git clone git@github.com:cghsir/note.git</td>
+              <td>从远程库克隆下来代码</td>
+            </tr>
+            <tr>
+              <td>git push -u origin master</td>
+              <td>把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。</td>
+            </tr>
+            <tr>
+              <td>git push origin master</td>
+              <td>由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</td>
+            </tr>
+            <tr>
+              <td>git merge --no-ff -m "merge with no-ff" dev</td>
+              <td>合并dev分支 禁用快照模式 保留分支历史</td>
+            </tr>
+            <tr>
+              <td>git log --graph --pretty=oneline --abbrev-commit</td>
+              <td>查看分支历史</td>
+            </tr>
+            <tr>
+              <td>git pull</td>
+              <td>更新最新代码</td>
+            </tr>
+            <tr>
+              <td>git diff src/ >> d:/diff.txt</td>
+              <td>比较scr的不同并将结果输出到文件 >>管道命令</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </body>
+</html>
